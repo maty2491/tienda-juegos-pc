@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand">Tienda</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="img-light" src="./assets/carrito.png" alt="">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <div id="carrito" class="text-center">
+                                <table id="lista-carrito" class="table table-hover">
+                                    <thead>
+                                        <tr class="table-secondary">
+                                            <th class="p-3">Imagen</th>
+                                            <th class="p-3">Nombre</th>
+                                            <th class="p-3">Precio</th>
+                                            <th class="p-3">Cantidad</th>
+                                            <th class="p-3"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <a href="#" id="vaciar-carrito" class="btn btn-danger">Vaciar carrito</a>
+                            </div>
+                        </ul>
+                    </li>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div id="lista-juegos" class="container">
+            <h3 class="text-center m-4">Juegos populares</h3>
+            <div class="row m-5">
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <img src="https://cdn1.epicgames.com/offer/6b0541b5d9aa476cbf407643ab3b1d7d/EGS_TheCallistoProtocol_StrikingDistanceStudios_S2_1200x1600-1e31eacc92833279f5b7a8d07cd3826c"
+                        class="img-fluid d-block" width="230">
+                    <div class="card-body">
+                        <p style="margin: auto; color: darkgrey;"> JUEGO BASE</p>
+                        <h5>The Callisto Protocol</h5>
+                        <p class="precio" style="margin-top: 0.1rem;">27, 99 U$D</p>
+                        <a class="btn btn-primary mb-4 agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <img src="https://cdn1.epicgames.com/offer/9bcf5a4dc1d54cb6ab1a42f3a70c5cf4/Carousel_BoxArt_1200x1600_1200x1600-38bda67bb1290f58e8a18ddc38a3c0ec"
+                        class="img-fluid d-block " width="230">
+                    <div class="card-body">
+                        <p style="margin: auto; color: darkgrey;"> JUEGO BASE</p>
+                        <h5 style="font-size: 1.1rem;">Assassin's Creed® Mirage</h5>
+                        <p class="precio" style="margin-top: 0.1rem;">59, 99 U$D</p>
+                        <a class="btn btn-primary mb-4 agregar-carrito" data-id="2">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <img src="https://cdn1.epicgames.com/epic/offer/RDR2PC1227_Epic%20Games_860x1148-860x1148-b4c2210ee0c3c3b843a8de399bfe7f5c.jpg"
+                        class="img-fluid d-block " width="230">
+                    <div class="card-body">
+                        <p style="margin: auto; color: darkgrey;"> JUEGO BASE</p>
+                        <h5 style="font-size: 1.1rem;">Red Dead Redemption 2</h5>
+                        <p class="precio" style="margin-top: 0.1rem;">36, 99 U$D</p>
+                        <a class="btn btn-primary mb-4 agregar-carrito" data-id="3">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <img src="https://cdn1.epicgames.com/offer/e97659b501af4e3981d5430dad170911/EGS_HogwartsLegacyDigitalDeluxeEdition_AvalancheSoftware_Editions_S2_1200x1600-eb5c42c97eb3f0ed444e58114a0c30b9"
+                        class="img-fluid d-block " width="230">
+                    <div class="card-body">
+                        <p style="margin: auto; color: darkgrey;"> JUEGO BASE</p>
+                        <h5 style="font-size: 1.1rem;">Hogwarts Legacy</h5>
+                        <p class="precio" style="margin-top: 0.1rem;">59, 99 U$D</p>
+                        <a class="btn btn-primary mb-4 agregar-carrito" data-id="4">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <img src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_DyingLight2StayHuman_Techland_S4_1200x1600-b3d66b4576fd6488b674710e13493435"
+                        class="img-fluid d-block " width="230">
+                    <div class="card-body">
+                        <p style="margin: auto; color: darkgrey;"> JUEGO BASE</p>
+                        <h5 style="font-size: 1.1rem;">Dying Light 2 Stay Human</h5>
+                        <p class="precio" style="margin-top: 0.1rem;">31, 99 U$D</p>
+                        <a class="btn btn-primary mb-4 agregar-carrito" data-id="5">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <img src="https://cdn1.epicgames.com/offer/0c40923dd1174a768f732a3b013dcff2/EGS_TheLastofUsPartI_NaughtyDogLLC_S2_1200x1600-41d1b88814bea2ee8cb7986ec24713e0"
+                        class="img-fluid d-block " width="230">
+                    <div class="card-body">
+                        <p style="margin: auto; color: darkgrey;"> JUEGO BASE</p>
+                        <h5 style="font-size: 1.1rem;">The Last of Us™ Parte I</h5>
+                        <p class="precio" style="margin-top: 0.1rem;">59, 99 U$D</p>
+                        <a class="btn btn-primary mb-4 agregar-carrito" data-id="6">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <img src="https://cdn1.epicgames.com/offer/1200aeb2f87c48349594d96554e2833d/DKO-PortraitImage-1200x1600-Logo_1200x1600-927ff222ccc3fb0d423b9dcc82768dad"
+                        class="img-fluid d-block " width="230">
+                    <div class="card-body">
+                        <p style="margin: auto; color: darkgrey;"> JUEGO BASE</p>
+                        <h5 style="font-size: 1.1rem;">Divine Knockout</h5>
+                        <p class="precio" style="margin-top: 0.1rem;">Gratis</p>
+                        <a class="btn btn-primary mb-4 agregar-carrito" data-id="7">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
